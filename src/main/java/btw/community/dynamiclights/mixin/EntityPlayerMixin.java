@@ -28,7 +28,7 @@ public abstract class EntityPlayerMixin implements LightSourceCarrier {
 		return hasLightSource;
 	}
 
-	@Inject(at = @At("RETURN"), method = "onUpdate", remap = false)
+	@Inject(at = @At("RETURN"), method = "onUpdate", remap = true)
 	private void onUpdateMixin(CallbackInfo info) {
 		EntityPlayer player = (EntityPlayer) (Object) this;
 
