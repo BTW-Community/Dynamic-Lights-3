@@ -1,6 +1,7 @@
 # gradle
 .gradle/
 build/
+build_BTW/
 out/
 classes/
 
@@ -25,7 +26,3 @@ run/
 
 # macos
 *.DS_Store
-build_BTW/BTW_dev/BTW_dev.zip
-build_BTW/BTW_dev/BTW_dev-javadoc.jar
-custom_mappings/mappings/mappings.tiny
-custom_mappings/META-INF/MANIFEST.MF
