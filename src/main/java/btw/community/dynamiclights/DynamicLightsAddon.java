@@ -1,7 +1,7 @@
 package btw.community.dynamiclights;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.src.Block;
 

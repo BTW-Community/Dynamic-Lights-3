@@ -4,7 +4,7 @@ import btw.block.BTWBlocks;
 import btw.community.dynamiclights.DynamicLightSourceBlock;
 import btw.community.dynamiclights.DynamicLightsAddon;
 import btw.community.dynamiclights.LightSourceCarrier;
-import btw.world.util.BlockPos;
+import api.world.BlockPos;
 import net.minecraft.src.EntityPlayer;
 import net.minecraft.src.ItemStack;
 import net.minecraft.src.MathHelper;
