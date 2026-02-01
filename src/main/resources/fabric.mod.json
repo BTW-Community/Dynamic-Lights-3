@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "dynamic-lights",
+  "id": "dl",
   "version": "${version}",
   "name": "Dynamic Lights",
   "description": "Moveable lights!!",
