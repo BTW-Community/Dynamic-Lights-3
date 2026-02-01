@@ -1,6 +1,5 @@
 package btw.community.dynamiclights.mixin;
 
-import btw.block.BTWBlocks;
 import btw.community.dynamiclights.DynamicLightSourceBlock;
 import btw.community.dynamiclights.DynamicLightsAddon;
 import btw.community.dynamiclights.LightSourceCarrier;
@@ -40,7 +39,7 @@ public abstract class EntityPlayerMixin implements LightSourceCarrier {
 				ItemStack heldItem = player.getHeldItem();
 				lightSourceUpdateTimer =0;
 
-                hasLightSource = heldItem != null && isItemLightSource(heldItem.itemID);
+                hasLightSource = heldItem != null && DynamicLightsAddon.lightEmittingItems.contains(heldItem.itemID);;
 
 				if (hasLightSource)
 				{
@@ -54,11 +53,6 @@ public abstract class EntityPlayerMixin implements LightSourceCarrier {
 				}
 			}
 		}
-	}
-
-	@Unique
-	private boolean isItemLightSource(int itemID) {
-		return itemID == BTWBlocks.finiteBurningTorch.blockID || itemID == BTWBlocks.infiniteBurningTorch.blockID;
 	}
 }
 
